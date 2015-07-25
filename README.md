@@ -3,61 +3,73 @@
 - List all docker images
 
 <code>
-docker images
+<t>docker images</t>
 </code>
 
 - List all running docker containers
 
 <code>
-docker ps
+<t>docker ps</t>
+</code>
+
+- List all docker containers
+
+<code>
+<t>docker ps -a</t>
 </code>
 
 - Run a specific docker image
 
 <code>
-docker run <i>image id</i>
+<t>docker run <i>image id</i></t>
 </code>
 
 - Remove a specific docker image
 
 <code>
-docker rmi <i>image id</i>
+<t>docker rmi <i>image id</i></t>
 </code>
 
 - Run an image in the background
 
 <code>
-docker run <i>image id</i> -d
+<t>docker run <i>image id</i> -d</t>
 </code>
 
 - Stop a docker container
 
 <code>
-docker stop <i>container id</i>
+<t>docker stop <i>container id</i></t>s
 </code>
 
 - Force remove all docker images 
 
 <code>
-docker rmi -f $(docker images -q)
+<t>docker rmi -f $(docker images -q)</t>
 </code>
 
 - Force stop all docker containers
 
 <code>
-docker stop $(docker ps -a -q)
+<t>docker stop $(docker ps -a -q)</t>
 </code>
 
 - Force remove all docker containers which have an exited status
 
 <code>
-docker rm $(docker ps --all -q -f status=exited)
+<t>docker rm $(docker ps --all -q -f status=exited)</t>
 </code>
 
 - Execute a bash command inside a running container
 
 <code>
-docker exec -it <i>container id</i> sh -c <i>bash command</i>
+<t>docker exec -it <i>container id</i> sh -c <i>bash command</i></t>
+</code>
+
+- SSH into container to run bash commands
+
+<code>
+<t>docker exec -it <i>container id</i> bash</t>
 </code>
 
 ## Docker Machine Commands ##
@@ -65,13 +77,13 @@ docker exec -it <i>container id</i> sh -c <i>bash command</i>
 - List all docker machines
 
 <code>
-docker-machine ls
+<t>docker-machine ls</t>
 </code>
 
 - Remove a docker machine by name
 
 <code>
-docker-machine rm <i>machine name</i>
+<t>docker-machine rm <i>machine name</i></t>
 </code>
 
 ## Docker Compose Commands ##
@@ -79,5 +91,5 @@ docker-machine rm <i>machine name</i>
 - Build and run a multi container app
 
 <code>
-docker-compose up
+<t>docker-compose up</t>
 </code>
