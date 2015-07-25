@@ -39,7 +39,7 @@
 - Stop a docker container
 
 <code>
-<t>docker stop <i>container id</i></t>s
+<t>docker stop <i>container id</i></t>
 </code>
 
 - Force remove all docker images 
